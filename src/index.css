@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+.shopping-card {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px #00000010;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.subtitle,
+.empty {
+  text-align: center;
+  color: #64748b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.add-button {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.shopping-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.shopping-item h3 {
+  margin: 0;
+}
+
+.shopping-item p {
+  margin-bottom: 0;
+  color: #64748b;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 18px;
+  background: #dcfce7;
+  border-radius: 12px;
+}
+
+.total strong {
+  color: #166534;
+}
+
+@media (max-width: 480px) {
+  .shopping-card {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+}
